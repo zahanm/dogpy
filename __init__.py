@@ -1,4 +1,8 @@
 
 from . import index
 
-output = json
+argv = index.argv
+kwargs = index.kwargs
+output = index.output
+
+dogpyfunc = index.dogpyfunc
