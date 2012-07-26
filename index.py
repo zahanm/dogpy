@@ -22,14 +22,15 @@ def output(out):
   """
   Send back output to Dog, exiting the python code
   """
-  json.dump(out, sys.stdout)
-  sys.exit(0)
+  json.dump({ "output": out }, sys.stdout)
+  sys.stdout.write("\n")
 
 def error(err):
   """
   Exit, and send back an error to Dog
   """
   json.dump({ "error": err }, sys.stdout)
+  sys.stdout.write("\n")
   sys.exit(1)
 
 def run():
@@ -41,8 +42,8 @@ def run():
     error("Improper calling convention")
   try:
     inp = json.load(sys.stdin)
-  except ValueError:
-    error("Invalid JSON passed to external code")
+  except ValueError as err:
+    error("Invalid JSON passed to external code: {0}".format(err))
   name = inp["name"]
   if inp["name"] not in doggyfns:
     error("The external function name invoked does not exist")
@@ -52,8 +53,8 @@ def run():
     error("The arguments were formatted incorrectly")
   try:
     doggyfns[name](*argv, **kwargs)
-  except TypeError:
-    error("The external function received incorrect arguments")
+  except TypeError as err:
+    error("The external function received incorrect arguments: {0}".format(err))
 
 import functools
 
