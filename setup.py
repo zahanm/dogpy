@@ -19,5 +19,20 @@ setup(
   - And the `dogpy.run()` line in your main scripting line
 
   Needs Python 2.6 or greater (AFAIK)
-  """
+  """,
+  classifiers=[
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Other Audience",
+    "Intended Audience :: Religion",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries"
+  ]
 )
