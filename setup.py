@@ -8,7 +8,6 @@ setup(
   author_email="z@zahanm.com",
   py_modules=[ "dogpy" ],
   url="https://github.com/zahanm/dogpy",
-  download_url="https://github.com/zahanm/dogpy/tarball/master",
   description="Python library for the Dog programming language",
   long_description="""\
   Python Interface to Dog
