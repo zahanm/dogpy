@@ -1,8 +1,8 @@
 
-from . import index
+import index
 
 error = index.error
 output = index.output
 
 run = index.run
-dogpyfunc = index.dogpyfunc
+extfunc = index.extfunc

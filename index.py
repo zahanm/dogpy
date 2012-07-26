@@ -59,7 +59,7 @@ import functools
 
 doggyfns = {}
 
-def dogpyfunc(fn):
+def extfunc(fn):
   """
   A decorator marking a function as suitable for use with (Dog)[http://dog-lang.org]
   """
