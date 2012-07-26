@@ -1,5 +1,5 @@
 
-import __init__ as dogpy
+import dogpy
 
 @dogpy.extfunc
 def top_k(a, c=1):
