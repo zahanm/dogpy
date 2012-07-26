@@ -2,7 +2,7 @@
 from distutils.core import setup
 
 setup(
-  name="Dogpy",
+  name="dogpy",
   version="0.1",
   author="Zahan Malkani",
   author_email="z@zahanm.com",
