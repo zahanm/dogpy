@@ -1,8 +1,8 @@
 
 from . import index
 
-argv = index.argv
-kwargs = index.kwargs
+error = index.error
 output = index.output
 
+run = index.run
 dogpyfunc = index.dogpyfunc
