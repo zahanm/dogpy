@@ -3,7 +3,7 @@ from distutils.core import setup
 
 setup(
   name="dogpy",
-  version="0.1",
+  version="0.1.1",
   author="Zahan Malkani",
   author_email="z@zahanm.com",
   py_modules=[ "dogpy" ],
