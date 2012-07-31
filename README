@@ -8,3 +8,8 @@ Accessible online at [pypi](http://pypi.python.org/pypi/dogpy).
 Run the test using
 
     node test_runner.js
+
+Upload new versions using
+
+    mate setup.py # change version
+    python setup.py sdist upload
