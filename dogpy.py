@@ -55,6 +55,8 @@ def run():
     doggyfns[name](*argv, **kwargs)
   except TypeError as err:
     error("The external function received incorrect arguments: {0}".format(err))
+  except StandardError as err:
+    error("Unknown error in external function: {0}".format(err))
 
 import functools
 
